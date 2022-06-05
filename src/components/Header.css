@@ -82,3 +82,8 @@ header li > a:hover{
         color: var(--Dark-Violet);
     }
 }
+@media(max-width:650px){
+    #hamburguer{
+      width:9%;
+    }
+}

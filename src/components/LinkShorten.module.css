@@ -34,8 +34,14 @@
     .boxLink,.copiedLink{
         flex-direction:column;
         gap:20px;
+        padding:10px 30px;
     }
     .copyButton{
         padding: 4% 9%;
+    }
+    .boxLink p{
+        font-size:13px;
+        text-align:center;
+        padding:10px 20px;
     }
 }
