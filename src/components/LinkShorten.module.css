@@ -1,0 +1,41 @@
+.boxLink{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:var(--White);
+    padding:15px 30px;
+    border-radius:5px;
+}
+.copiedLink{
+    display:flex;
+    gap:10px;
+}
+.copiedLink>span{
+    color:var(--Cyan);
+    font-weight:800;
+    margin-right:10px;
+}
+.copyButton,.copiedButton{
+    background-color:var(--Cyan);
+    color:var(--White);
+    padding:2% 6%;
+    border-radius:5px;
+    border:none;
+    margin-right:20px;
+    cursor: pointer;
+}
+.copyButton:hover{
+    background-color:var(--LigthCyan);
+}
+.copiedButton{
+    background-color:var(--Dark-Violet);
+}
+@media(max-width:900px){
+    .boxLink,.copiedLink{
+        flex-direction:column;
+        gap:20px;
+    }
+    .copyButton{
+        padding: 4% 9%;
+    }
+}

@@ -1,0 +1,57 @@
+.linkInput {
+    display:flex;
+    flex-wrap:wrap;
+    padding: 2em;
+    border-radius: 10px;
+    background: url(../images/bg-boost-desktop.svg) no-repeat 20% 75%,
+      var(--Dark-Violet);
+    position: relative;
+    bottom: 3.5em;
+    gap: 20px;
+  }
+.inputShorten,.inputShortenError{
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    width: 80%;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+#shortenIt {
+    padding: 1.3% 3%;
+    background-color: var(--Cyan);
+    color: var(--White);
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    width:15%;
+}
+#shortenIt:hover{
+  background-color:var(--LigthCyan);
+}
+.ContainerLinks{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+.errorRequest{
+    color:var(--Red);
+    margin-top:5px;
+}
+.inputShortenError{
+  border:3px solid var(--Red);
+}
+.inputShortenError::placeholder{
+  color:var(--SoftRed);
+}
+@media(max-width:950px){
+.inputShorten,.inputShortenError{
+  width:100%;
+}
+#shortenIt{
+  padding: 4.3% 3%;
+  width:100%;
+}
+}
